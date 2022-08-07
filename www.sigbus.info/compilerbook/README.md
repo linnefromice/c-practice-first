@@ -13,3 +13,13 @@ $ ./tmp
 $ echo $?
 # -> 123
 ```
+
+for step3
+```bash
+cc -o 9cc 9cc.c
+./9cc "1 + 23 + 5 - 9" > tmp.s
+cc -o tmp tmp.s
+./tmp
+echo $?
+# 20
+```
